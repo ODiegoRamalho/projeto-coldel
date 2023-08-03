@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap'); /*fonte */
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {/*variael */
+ --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+ --fonte2: 'Passion One', cursive;
+ --fonte3:'Sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: var(--fonte1); /*variael */
+    min-height: 100vh;
+    background-color: rgb(226, 217, 217);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+   
+}
+
+header h1 {
+    padding-top: 50px;
+    font-variant: small-caps; /*maiúsculas */
+    font-family: var(--fonte2);
+    font-size: 10vw; /*10%. adaptável */
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+section {
+    padding-top: 10vh; /*10%*/
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw; /*5%. adaptável */
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgba(21, 20, 20, 0.977);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.692);
+    background-size: cover; /* altura largura cobrem completamente o contêiner)*/
+    background-attachment: fixed; /*efeito parallax */
+
+}
+
+section#img01 {
+    background-image: url(./imagens/background001.jpg);
+    background-position: right center;
+    
+}
+
+section#img02 {
+    background-image: url(./imagens/background002.jpg);
+}
+
+section.imagem > p {
+    display: inline-block; /*se adapta de acordo conteudo */
+    background-color: rgba(0, 0, 0, 0.244);
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
